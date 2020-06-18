@@ -1,5 +1,7 @@
 package vehicles;
 
+import javax.xml.crypto.dom.DOMCryptoContext;
+import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -16,7 +18,7 @@ public class Car {
 
     public String brandGenerator(){
         Random random = new Random();
-        String[] brands = {"Toyota", "Volkswagen", "Ford", "Honda", "Nissan", "Hyundai", "Chevrolet", "Kia", "Mercedes", "BMW", "Alfa Romeo", "Audi", "Fiat", "Citroen", "Mazda", "Opel", "Peugeot", "Renault", "Volvo", "Skoda"};
+        String[] brands = {"Toyota", "Volkswagen", "Ford", "Honda", "Nissan", "Hyundai", "Audi", "Kia", "Mercedes", "BMW"};
         return brand = brands[random.nextInt(brands.length)];
     }
 
@@ -50,6 +52,23 @@ public class Car {
         this.mileage = randomMileage;
         this.color = colorGenerator();
         this.segment = segmentGenerator();
+    }
+
+    public void getValue(){
+        setValue();
+    }
+
+    public String getBrand(){
+        return this.brand;
+    }
+
+    public String getSegment(){
+        return this.segment;
+    }
+
+    private String decimalFormat(Double value){
+        DecimalFormat decimalFormat = new DecimalFormat("0.00");
+        return decimalFormat.format(value);
     }
 }
 
