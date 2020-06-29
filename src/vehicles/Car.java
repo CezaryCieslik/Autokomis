@@ -1,6 +1,5 @@
 package vehicles;
 
-import javax.xml.crypto.dom.DOMCryptoContext;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
@@ -12,8 +11,6 @@ public class Car {
     public Integer mileage;
     public String color;
     public String segment;
-    public Double costOfAllRepairs = 0.0;
-    public Double costOfAllWashes = 0.0;
     Integer randomMileage = ThreadLocalRandom.current().nextInt(0,500000);
 
     public String brandGenerator(){
@@ -54,8 +51,8 @@ public class Car {
         this.segment = segmentGenerator();
     }
 
-    public void getValue(){
-        setValue();
+    public Double getValue(){
+        return this.value;
     }
 
     public String getBrand(){
