@@ -1,12 +1,12 @@
-package mechanics;
+package com.company.mechanics;
 
-public class Adrian {
+public class Janusz {
 
-    private Double BRAKES_REPAIR_PRICE = 100.0;
-    private Double CHASSIS_REPAIR_PRICE = 400.0;
-    private Double ENGINE_REPAIR_PRICE = 3000.0;
-    private Double BODY_REPAIR_PRICE = 1000.0;
-    private Double GEARBOX_REPAIR_PRICE = 800.0;
+    private Double BRAKES_REPAIR_PRICE = 500.0;
+    private Double CHASSIS_REPAIR_PRICE = 1000.0;
+    private Double ENGINE_REPAIR_PRICE = 10000.0;
+    private Double BODY_REPAIR_PRICE = 5000.0;
+    private Double GEARBOX_REPAIR_PRICE = 4000.0;
     private Double PRICE_FOR_TOYOTA = 1.6;
     private Double PRICE_FOR_VOLKSWAGEN = 1.1;
     private Double PRICE_FOR_FORD = 1.3;

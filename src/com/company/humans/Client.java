@@ -1,6 +1,7 @@
+package com.company.humans;
+
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
-import vehicles.Car;
 
 public class Client {
     private String firstName;
@@ -39,5 +40,13 @@ public class Client {
 
     public String getSecondBrand(){
         return this.secondBrand;
+    }
+
+    public Double getClientCash(){
+        return this.clientCash;
+    }
+
+    public void setClientCash(Double clientCash) {
+        this.clientCash = clientCash;
     }
 }

@@ -1,4 +1,4 @@
-package mechanics;
+package com.company.mechanics;
 
 public class Marian {
 

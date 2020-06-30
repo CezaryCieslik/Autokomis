@@ -1,6 +1,6 @@
-package databases;
+package com.company.databases;
 
-import vehicles.Car;
+import com.company.vehicles.Car;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package vehicles;
+package com.company.vehicles;
 
 import java.util.Random;
 
