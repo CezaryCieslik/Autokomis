@@ -49,4 +49,8 @@ public class Client {
     public void setClientCash(Double clientCash) {
         this.clientCash = clientCash;
     }
+
+    public String toString(){
+        return "\n" + this.firstName + "Client cash: " + this.clientCash + "Interested in: " + this.firstBrand + "and: " + this.secondBrand;
+    }
 }

@@ -12,15 +12,18 @@ import java.util.HashSet;
 
 
 public class Player implements Purchase, Sale {
+    public String name;
     public Double cash;
     public Car car;
     public ArrayList<Car> playerCars;
     public Double tax = 0.02;
 
-    public Player(Double cash){
+    public Player(String name, Double cash){
+        this.name = name;
         this.cash = cash;
         this.playerCars = new ArrayList<Car>();
     }
+
 
     public void removeCar(Car car){
         this.playerCars.remove(car);

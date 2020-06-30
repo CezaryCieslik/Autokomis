@@ -63,6 +63,10 @@ public class Car {
         return this.segment;
     }
 
+    public String toString(){
+        return "\n" + this.brand + ", segment: " + this.segment + ", color: " + this.color + ", mileage " + this.mileage + ", value " + decimalFormat(this.value);
+    }
+
     private String decimalFormat(Double value){
         DecimalFormat decimalFormat = new DecimalFormat("0.00");
         return decimalFormat.format(value);
